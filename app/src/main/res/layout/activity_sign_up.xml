@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#12137d"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:id="@+id/backhome"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+        app:backgroundTint="@color/white"
+        android:onClick="goToHomeAct"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup"
+        android:text="S'inscrire"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_margin="30dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Créer un nouveau compte"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="normal"
+        android:layout_marginTop="60dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/boxbg"
+        android:id="@+id/signinbox"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nom"
+        android:layout_below="@id/signup"
+        android:background="@drawable/et_style"
+        android:hint="Nom"
+        android:textColorHint="#838383"
+        android:textColor="#838383"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/email"
+        android:layout_below="@id/nom"
+        android:background="@drawable/et_style"
+        android:hint="Email"
+        android:textColorHint="#838383"
+        android:textColor="#838383"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:layout_below="@id/email"
+        android:background="@drawable/et_style"
+        android:hint="Mot de passe"
+        android:inputType="textPassword"
+        android:textColorHint="#838383"
+        android:textColor="#838383"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_key_24"
+        android:drawablePadding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tel"
+        android:layout_below="@id/password"
+        android:background="@drawable/et_style"
+        android:hint="Téléphone"
+        android:textColorHint="#838383"
+        android:textColor="#838383"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:padding="20dp"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbtn"
+        android:layout_below="@id/tel"
+        android:text="S'inscrire"
+        android:backgroundTint="#576efa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:layout_below="@id/signupbtn"
+        android:text="Vous avez déjà un compte ?"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="15.1dp"
+        android:textSize="15dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signupbtn"
+        android:text=" Connectez vous"
+        android:layout_marginTop="15.1dp"
+        android:textSize="15dp"
+        android:textColor="#2596be"
+        android:layout_toEndOf="@id/login"
+        android:onClick="goToSignInAct"/>
+
+</RelativeLayout>

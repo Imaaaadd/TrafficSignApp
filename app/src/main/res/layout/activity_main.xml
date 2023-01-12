@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9653f"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="197dp"
+        android:layout_height="197dp"
+        android:background="@drawable/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/loginbtn"
+        android:layout_marginBottom="10dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginbtn"
+        android:text="Se connecter"
+        android:backgroundTint="#12137d"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:onClick="goToSignIn"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signupbtn"
+        android:layout_below="@id/loginbtn"
+        android:text="Creer un compte"
+        android:backgroundTint="#12137d"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:onClick="goToSignUp"
+        />
+
+    <ImageView
+        android:layout_width="124dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/img"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="49dp"/>
+
+</RelativeLayout>
